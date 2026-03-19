@@ -201,7 +201,7 @@ body{font-family:'Cairo',sans-serif;direction:rtl;background:var(--bg);color:var
           <svg viewBox="0 0 20 20" fill="none"><path d="M13 5l-6 5 6 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </div>
         <h1>تدريب هيئة الشراء UPA</h1>
-        <span class="ph-badge">6 فيديوهات</span>
+        <span class="ph-badge" id="videosCount"></span>
       </div>
       <div class="video-list" id="shira-list"></div>
     </div>
@@ -294,6 +294,7 @@ const shiraVideos=[
   {title:'استلام التبرعات',meta:'',dur:'',tag:'',tagClass:'',url:'https://drive.google.com/file/d/1XpxJrgc5pSHNov53Bf6sDOWeQV990xce/preview'},
   {title:'فك البروتكشن الخاص بالاكسيل',meta:'',dur:'',tag:'',tagClass:'',url:'https://drive.google.com/file/d/1xeNFaH-7qM_RfJ1Dvdj2_5Oj1zYYca19/preview'}
 ];
+  document.getElementById("videosCount").innerText = shiraVideos.length + " فيديوهات";
 const medicineVideos=[
   {title:'شرح نظام ميدسين للنفقة الخارجية',meta:'الوحدة الأولى · مقدمة عامة',dur:'15:10',tag:'جديد',tagClass:'tag-green'},
   {title:'تسجيل المريض وبيانات التحويل',meta:'الوحدة الثانية · عملي',dur:'22:05',tag:'أساسي',tagClass:'tag-green'},
