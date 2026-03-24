@@ -213,7 +213,7 @@ body{font-family:'Cairo',sans-serif;direction:rtl;background:var(--bg);color:var
           <svg viewBox="0 0 20 20" fill="none"><path d="M13 5l-6 5 6 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </div>
         <h1>تدريب ميدسين — ميكنة النفقة الخارجي</h1>
-        <span class="ph-badge green">8 فيديوهات</span>
+        <span class="ph-badge green" id="medicineCount"></span>
       </div>
       <div class="video-list" id="medicine-list"></div>
     </div>
@@ -298,6 +298,7 @@ const shiraVideos=[
 const medicineVideos =[
 {title:'رفع القرارات على السيستم (ادارى)',meta:'',dur:'',tag:'',tagClass:'',url:'https://drive.google.com/file/d/1EYzyI5pSnnIIFbveYbP-hY5FnLI9Wx5g/preview'}
 ];
+  document.getElementById("medicineCount").innerText = medicineVideos.length + " فيديوهات";
 function buildList(videos, containerId, color){
   const c=document.getElementById(containerId);
   const clr=color==='blue'?'#1d4ed8':'#16a34a';
